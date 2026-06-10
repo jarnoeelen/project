@@ -1,0 +1,92 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Practical Info — After Tomorrow</title>
+  <link rel="stylesheet" href="styles.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inria+Serif:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
+</head>
+<body>
+  <header class="site-header">
+    <a class="site-brand" href="index.html" aria-label="After Tomorrow home">
+      <img class="site-logo" src="images/melodies of peace.jpg" alt="After Tomorrow logo" />
+    </a>
+    <a class="site-title" href="index.html">After Tomorrow</a>
+    <div class="header-actions">
+      <button class="nav-toggle" aria-expanded="false" aria-controls="menu" aria-label="Open navigation menu">☰</button>
+      <button id="themeToggle" class="theme-toggle" aria-live="polite" aria-label="Toggle theme">Dark</button>
+    </div>
+    <nav class="nav" aria-label="Main navigation">
+      <ul id="menu" class="menu">
+        <li><a href="tickets.html">Tickets</a></li>
+        <li><a href="artists.html">Line Up</a></li>
+        <li><a href="workshops.html">Workshops</a></li>
+        <li><a href="family.html">Family</a></li>
+        <li class="active"><a href="practical.html">Practical</a></li>
+        <li><a href="gallery.html">Gallery</a></li>
+        <li><a href="about.html">About Us</a></li>
+        <li><a href="contact.html">Contact</a></li>
+        <li class="cart-link"><a href="cart.html">Cart <span class="cart-count" id="cartCount">0</span></a></li>
+      </ul>
+    </nav>
+  </header>
+  <main class="container">
+    <section class="hero" role="img" aria-label="Festival location in the Austrian Alps">
+      <div class="hero-overlay"></div>
+      <div class="hero-content">
+        <h1>Practical Info</h1>
+        <p>How to reach the festival, what to expect, and who to contact.</p>
+      </div>
+    </section>
+
+    <section class="grid-2" style="margin-top: 2rem;">
+      <article class="card">
+        <h2>How to Get Here</h2>
+        <p><strong>Public transport:</strong> Take a train to Innsbruck and continue by regional bus or festival shuttle.</p>
+        <p><strong>Bike:</strong> Bike parking is available close to the entrance, and the area has scenic cycling routes.</p>
+        <p><strong>Car:</strong> Follow the festival signs in Tirol. Parking is limited, so carpooling is recommended.</p>
+        <p><strong>Plane:</strong> The closest airports are Innsbruck, Munich, and Salzburg. From there, continue by train or bus.</p>
+      </article>
+      <article class="card">
+        <h2>Location Map</h2>
+        <p>The festival takes place in Tirol, Austria.</p>
+        <div style="border-radius:14px; overflow:hidden; border:1px solid var(--border);">
+          <iframe
+            title="Map of Tirol, Austria"
+            src="https://www.openstreetmap.org/export/embed.html?bbox=10.2%2C46.8%2C12.7%2C47.8&amp;layer=mapnik"
+            style="width:100%; height:320px; border:0; display:block;"
+            loading="lazy"
+          ></iframe>
+        </div>
+      </article>
+    </section>
+
+    <section class="grid-2" style="margin-top: 1rem;">
+      <article class="card">
+        <h2>Rules and Notes</h2>
+        <ul>
+          <li>No outside alcohol.</li>
+          <li>Reusable cups are used on site.</li>
+          <li>Children must stay with an adult.</li>
+          <li>Respect the quiet zones and walking paths.</li>
+          <li>Drones, fireworks, and open flames are not allowed.</li>
+        </ul>
+      </article>
+      <article class="card">
+        <h2>Contact</h2>
+        <p><strong>Email:</strong> hello@melodiesofpeace.org</p>
+        <p><strong>Social:</strong> @melodiesofpeace</p>
+        <p><strong>Help desk:</strong> Open from 09:00 until 20:00 on festival days.</p>
+        <p><strong>Emergency note:</strong> Follow staff directions and the on-site signage if weather changes quickly in the mountains.</p>
+      </article>
+    </section>
+  </main>
+  <footer class="site-footer">
+    <p>© <span id="year"></span> After Tomorrow. All rights reserved.</p>
+  </footer>
+  <script src="script.js"></script>
+</body>
+</html>

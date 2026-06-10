@@ -1,0 +1,76 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>After Tomorrow — Home</title>
+  <link rel="stylesheet" href="styles.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inria+Serif:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
+</head>
+<body>
+  <header class="site-header">
+    <a class="site-brand" href="index.html" aria-label="After Tomorrow home">
+      <img class="site-logo" src="images/melodies of peace.jpg" alt="After Tomorrow logo" />
+    </a>
+    <a class="site-title" href="index.html">After Tomorrow</a>
+    <div class="header-actions">
+      <button class="nav-toggle" aria-expanded="false" aria-controls="menu" aria-label="Open navigation menu">☰</button>
+      <button id="themeToggle" class="theme-toggle" aria-live="polite" aria-label="Toggle theme">Dark</button>
+    </div>
+    <nav class="nav" aria-label="Main navigation">
+      <ul id="menu" class="menu">
+        <li><a href="tickets.html">Tickets</a></li>
+        <li><a href="artists.html">Line Up</a></li>
+        <li><a href="workshops.html">Workshops</a></li>
+        <li><a href="family.html">Family</a></li>
+        <li><a href="practical.html">Practical</a></li>
+        <li><a href="gallery.html">Gallery</a></li>
+        <li><a href="about.html">About Us</a></li>
+        <li><a href="contact.html">Contact</a></li>
+        <li class="cart-link"><a href="cart.html">Cart <span class="cart-count" id="cartCount">0</span></a></li>
+      </ul>
+    </nav>
+</header>
+  <main>
+    <section class="hero" role="img" aria-label="People celebrating a peace festival at sunset with music">
+      <div class="hero-overlay"></div>
+      <div class="hero-content">
+        <h1>After Tomorrow</h1>
+        <p>Where music brings hearts together.</p>
+        <div class="hero-cta">
+          <a class="btn btn-outline" href="tickets.html">Get Tickets</a>
+          <a class="btn btn-outline" href="artists.html">See Line Up</a>
+          <a class="btn btn-outline" href="game.html">Game</a>
+        </div>
+      </div>
+    </section>
+    <section class="highlights container">
+      <h2>What to expect</h2>
+      <div class="grid-3">
+        <article class="card">
+          <h3><a href="artists.html">Diverse Line Up</a></h3>
+          <p>Alt-pop, Rock, indie, and classical artists united by a shared message of peace.</p>
+        </article>
+        <article class="card">
+          <h3><a href="workshops.html">Workshops</a></h3>
+          <p>Mindfulness, community drum circles, and peace-building talks throughout the day.</p>
+        </article>
+        <article class="card">
+          <h3><a href="family.html">Family Friendly</a></h3>
+          <p>Accessible spaces, kids activities, and local food trucks with vegetarian options.</p>
+        </article>
+      </div>
+    </section>
+    <section class="cta-band">
+      <p>Join us in Tirol this summer — tickets are limited.</p>
+      <a class="btn btn-light" href="tickets.html">Reserve your spot</a>
+    </section>
+  </main>
+  <footer class="site-footer">
+    <p>© <span id="year"></span> After Tomorrow. All rights reserved.</p>
+  </footer>
+  <script src="script.js"></script>
+</body>
+</html>
