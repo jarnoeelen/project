@@ -1,0 +1,68 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Tickets — After Tomorrow</title>
+  <link rel="stylesheet" href="styles.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inria+Serif:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
+</head>
+<body>
+  <header class="site-header">
+    <a class="site-brand" href="index.html" aria-label="After Tomorrow home">
+      <img class="site-logo" src="images/melodies of peace.jpg" alt="After Tomorrow logo" />
+    </a>
+    <a class="site-title" href="index.html">After Tomorrow</a>
+    <div class="header-actions">
+      <button class="nav-toggle" aria-expanded="false" aria-controls="menu" aria-label="Open navigation menu">☰</button>
+      <button id="themeToggle" class="theme-toggle" aria-live="polite" aria-label="Toggle theme">Dark</button>
+    </div>
+    <nav class="nav" aria-label="Main navigation">
+      <ul id="menu" class="menu">
+        <li class="active"><a href="tickets.html">Tickets</a></li>
+        <li><a href="artists.html">Line Up</a></li>
+        <li><a href="workshops.html">Workshops</a></li>
+        <li><a href="family.html">Family</a></li>
+        <li><a href="practical.html">Practical</a></li>
+        <li><a href="gallery.html">Gallery</a></li>
+        <li><a href="about.html">About Us</a></li>
+        <li><a href="contact.html">Contact</a></li>
+        <li class="cart-link"><a href="cart.html">Cart <span class="cart-count" id="cartCount">0</span></a></li>
+      </ul>
+    </nav>
+  </header>
+  <main class="container">
+    <h1>Tickets</h1>
+    <p>Select your passes. All prices include VAT.</p>
+    <div class="tickets-grid">
+      <article class="ticket-card">
+        <h2>Day Pass</h2>
+        <p class="price">€39</p>
+        <p>Access to all stages for one day.</p>
+        <button class="btn btn-primary add-to-cart" data-id="day" data-name="Day Pass" data-price="39">Add to cart</button>
+      </article>
+      <article class="ticket-card">
+        <h2>Weekend Pass</h2>
+        <p class="price">€79</p>
+        <p>Full festival access for both days.</p>
+        <button class="btn btn-primary add-to-cart" data-id="weekend" data-name="Weekend Pass" data-price="79">Add to cart</button>
+      </article>
+      <article class="ticket-card">
+        <h2>Family Pack</h2>
+        <p class="price">€120</p>
+        <p>2 adults + 2 children, both days.</p>
+        <button class="btn btn-primary add-to-cart" data-id="family" data-name="Family Pack" data-price="120">Add to cart</button>
+      </article>
+    </div>
+    <div class="note">
+      <p><strong>Note:</strong> Your cart saves in your browser. Proceed to checkout via the Cart page.</p>
+    </div>
+  </main>
+  <footer class="site-footer">
+    <p>© <span id="year"></span> After Tomorrow.</p>
+  </footer>
+  <script src="script.js"></script>
+</body>
+</html>

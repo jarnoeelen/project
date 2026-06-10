@@ -1,0 +1,52 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Gallery — After Tomorrow</title>
+  <link rel="stylesheet" href="styles.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inria+Serif:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
+</head>
+<body>
+  <header class="site-header">
+    <a class="site-brand" href="index.html" aria-label="After Tomorrow home">
+      <img class="site-logo" src="images/melodies of peace.jpg" alt="After Tomorrow logo" />
+    </a>
+    <a class="site-title" href="index.html">After Tomorrow</a>
+    <div class="header-actions">
+      <button class="nav-toggle" aria-expanded="false" aria-controls="menu" aria-label="Open navigation menu">☰</button>
+      <button id="themeToggle" class="theme-toggle" aria-live="polite" aria-label="Toggle theme">Dark</button>
+    </div>
+    <nav class="nav" aria-label="Main navigation">
+      <ul id="menu" class="menu">
+        <li><a href="tickets.html">Tickets</a></li>
+        <li><a href="artists.html">Line Up</a></li>
+        <li><a href="workshops.html">Workshops</a></li>
+        <li><a href="family.html">Family</a></li>
+        <li><a href="practical.html">Practical</a></li>
+        <li class="active"><a href="gallery.html">Gallery</a></li>
+        <li><a href="about.html">About Us</a></li>
+        <li><a href="contact.html">Contact</a></li>
+        <li class="cart-link"><a href="cart.html">Cart <span class="cart-count" id="cartCount">0</span></a></li>
+      </ul>
+    </nav>
+  </header>
+  <main class="container">
+    <h1>Gallery</h1>
+    <div class="masonry">
+      <img src="images/Use%20AI%20Image%20Jun%2010,%202026,%2011_03_50.png" alt="AI-generated festival crowd at sunset" />
+      <img src="images/Use%20AI%20Image%20Jun%2010,%202026,%2011_04_26.png" alt="AI-generated stage lights over performers" />
+      <img src="images/Use%20AI%20Image%20Jun%2010,%202026,%2011_05_11.png" alt="AI-generated children painting peace murals" />
+      <img src="images/Use%20AI%20Image%20Jun%2010,%202026,%2011_06_19.png" alt="AI-generated hands holding candles" />
+      <img src="images/Use%20AI%20Image%20Jun%2010,%202026,%2011_07_24.png" alt="AI-generated violinist in warm light" />
+      <img src="images/Use%20AI%20Image%20Jun%2010,%202026,%2011_08_13.png" alt="AI-generated drum circle under trees" />
+    </div>
+  </main>
+  <footer class="site-footer">
+    <p>© <span id="year"></span> After Tomorrow.</p>
+  </footer>
+  <script src="script.js"></script>
+</body>
+</html>

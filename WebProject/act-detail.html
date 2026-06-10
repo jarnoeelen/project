@@ -1,0 +1,69 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Sixpence None The Richer — After Tomorrow</title>
+  <link rel="stylesheet" href="styles.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inria+Serif:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
+</head>
+<body>
+  <header class="site-header">
+    <a class="site-brand" href="index.html" aria-label="After Tomorrow home">
+      <img class="site-logo" src="images/melodies of peace.jpg" alt="After Tomorrow logo" />
+    </a>
+    <a class="site-title" href="index.html">After Tomorrow</a>
+    <div class="header-actions">
+      <button class="nav-toggle" aria-expanded="false" aria-controls="menu" aria-label="Open navigation menu">☰</button>
+      <button id="themeToggle" class="theme-toggle" aria-live="polite" aria-label="Toggle theme">Dark</button>
+    </div>
+    <nav class="nav" aria-label="Main navigation">
+      <ul id="menu" class="menu">
+        <li><a href="tickets.html">Tickets</a></li>
+        <li><a href="artists.html">Line Up</a></li>
+        <li><a href="workshops.html">Workshops</a></li>
+        <li><a href="family.html">Family</a></li>
+        <li><a href="practical.html">Practical</a></li>
+        <li><a href="gallery.html">Gallery</a></li>
+        <li><a href="about.html">About Us</a></li>
+        <li><a href="contact.html">Contact</a></li>
+        <li class="cart-link"><a href="cart.html">Cart <span class="cart-count" id="cartCount">0</span></a></li>
+      </ul>
+    </nav>
+  </header>
+  <main class="container">
+    <section class="grid-2">
+      <article class="card">
+        <img src="images/sixpence.jpg" alt="Sixpence None The Richer" style="width:100%; border-radius:12px; border:1px solid var(--border);" />
+      </article>
+      <article class="card">
+        <p class="eyebrow">Featured Act</p>
+        <h1>Sixpence None The Richer</h1>
+        <p>Dreamy alt-pop with warm melodies and reflective lyrics.</p>
+        <p>Their set opens the evening with soft, nostalgic energy and a string of singalong choruses.</p>
+        <p><strong>Set time:</strong> Friday, 18:00 on the Meadow Stage.</p>
+        <p><strong>Why this act?</strong> The band bridges generations and fits the festival’s calm, hopeful atmosphere.</p>
+        <p><a class="btn btn-primary" href="artists.html">Back to line up</a></p>
+      </article>
+    </section>
+    <section style="margin-top:1rem;">
+      <div class="card" style="padding:0; overflow:hidden; border-radius:14px;">
+        <iframe
+          src="https://www.youtube.com/embed/Jnq9wPDoDKg"
+          title="Sixpence None The Richer — Kiss Me (Official Music Video)"
+          style="width:100%; aspect-ratio:16/9; display:block; border:0;"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+          allowfullscreen
+          loading="lazy"
+        ></iframe>
+      </div>
+    </section>
+  </main>
+  <footer class="site-footer">
+    <p>© <span id="year"></span> After Tomorrow. All rights reserved.</p>
+  </footer>
+  <script src="script.js"></script>
+</body>
+</html>
